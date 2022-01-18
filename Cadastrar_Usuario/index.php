@@ -24,9 +24,7 @@
     <?php
     unset($_SESSION['retorno']); 
         }
-    ?>
-
-    
+    ?>  
     <h1>Cadastrar Usuário</h1>
         <form method="post" action="processa.php">
             <label>Nome:</label>

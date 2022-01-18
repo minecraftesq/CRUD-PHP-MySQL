@@ -5,9 +5,6 @@
     $nome = filter_input(INPUT_POST, 'nome', FILTER_SANITIZE_STRING); // "pegando" a string de nome no input da pagina "index.html" e filtrando para colocar na variavel $nome
     $email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL); 
 
-    /*echo "Nome: $nome <br><br>";
-    echo "Email: $email <br><br>";
-    */
     $_SESSION['retorno'] = "";
 
     $query_cadastrar_usuario = "INSERT INTO tabela_usuarios (nome_usuario, email_usuario, created) VALUES ('$nome', '$email', NOW())"; // query de inserir valores na tabela
